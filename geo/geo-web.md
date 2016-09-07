@@ -21,15 +21,18 @@ DON'T upload very large GeoJSON files to Gist. Anything over 2-3MB can take a lo
 ### Viewing GeoJSON files
 
 For small GeoJSON files (up to 2-3MB)
-* <http://geojson.io>
-* <http://dropchop.io>
-* <https://gist.github.com>
-* <https://github.com>
+* [GeoJSON.io](http://geojson.io)
+* [DropChop](http://dropchop.io)
+* [GitHub Gists](https://gist.github.com)
+* [GitHub](https://github.com)
 
 For larger GeoJSON files (up to 100MB)
-* <https://github.com/anandthakker/gjv>
+* [gjv](https://github.com/anandthakker/gjv) - Desktop app
+
+For GeoJSON files > 100MB
+* [Tippecanoe](https://github.com/mapbox/tippecanoe) + [a Vector Tile Server](https://github.com/mapbox/awesome-vector-tiles#servers)
 
 
 ### Links
-* <http://geojson.org>
-* <https://github.com/tmcw/awesome-geojson>
+* [GeoJSON Specification](http://geojson.org)
+* [Awesome GeoJSON](https://github.com/tmcw/awesome-geojson)
