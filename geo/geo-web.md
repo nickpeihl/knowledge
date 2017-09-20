@@ -32,7 +32,10 @@ For larger GeoJSON files (up to 100MB)
 For GeoJSON files > 100MB
 * [Tippecanoe](https://github.com/mapbox/tippecanoe) + [a Vector Tile Server](https://github.com/mapbox/awesome-vector-tiles#servers)
 
-
 ### Links
 * [GeoJSON Specification](http://geojson.org)
 * [Awesome GeoJSON](https://github.com/tmcw/awesome-geojson)
+
+## ArcGIS Online/Server
+
+Requests to ArGIS Online/Server feature services usually contain a bounding box to limit the number of features returned. However, sometimes a single feature will contain thousands of vertices spread out over a large geographic area. The bounding box query will limit the request to features within the extent but may contain unnecessary vertices outside the extent. To avoid downloading unnecessary verticies from very large features you may want to split the feature. One good way to do this is with the [Dice](http://pro.arcgis.com/en/pro-app/tool-reference/data-management/dice.htm) tool in ArcGIS. This will create multiple features when a single feature contains more than the given number of vertices. I suggest setting a vertex limit of 1000. 
